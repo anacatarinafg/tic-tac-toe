@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-bg;
+  color: $text-color;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  .navbar {
+    width: 95%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar__logotype {
+      width: 35px;
+      height: 35px;
+    }
+    .navbar__list {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      .navbar__item {
+        font-weight: 500;
+        transition: 250ms;
+        &:hover {
+          transform: scale(1.1);     
+        }
+      }
+      .navbar__link {
+
+      }
+    }
+  }
+}

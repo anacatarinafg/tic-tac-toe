@@ -3,17 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/tic.css">
+
     <title>Tic-tac-toe</title>
   </head>
 
   <body>
-    <h2>Tic-tac-toe</h2>
-    <div class="container">
-      <!--  -->
-    </div>
-    <p class="info"></p>
-    <button onclick="reset()">Reset</button>
+    <header>
+      <nav class="navbar">
+        <img src="./assets/ana-goncalves.png" alt="logotype" class="navbar__logotype" />
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__link">Tic-tac-toe</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./flag.html" class="navbar__link">Flag guessing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="headline">Tic-tac-toe</h2>
+      <div class="container">
+        <!--  -->
+      </div>
+      <p class="info"></p>
+      <button onclick="reset()">Reset</button>
+    </main>
 
     <script src="./javascript/script.js"></script>
   </body>

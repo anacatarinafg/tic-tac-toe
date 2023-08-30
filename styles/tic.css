@@ -1,33 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: #fbecdc;
-  color: #fa5537;
-  font-family: Georgia, "Times New Roman", Times, serif;
+main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2em;
 }
-
-h2 {
+main h2 {
   text-transform: uppercase;
   font-size: 4.5em;
 }
 @media screen and (max-width: 1024px) {
-  h2 {
+  main h2 {
     font-size: 2.5em;
   }
 }
-
-button {
+main button {
   all: unset;
   border: 1px solid #fa5537;
   border-radius: 25px;
@@ -35,11 +22,10 @@ button {
   transition: 250ms;
   cursor: pointer;
 }
-button:hover {
+main button:hover {
   transform: scale(1.1);
 }
-
-.container {
+main .container {
   width: 500px;
   height: 500px;
   display: grid;
@@ -47,12 +33,12 @@ button:hover {
   grid-template-rows: repeat(3, 1fr);
 }
 @media screen and (max-width: 1024px) {
-  .container {
+  main .container {
     width: 300px;
     height: 300px;
   }
 }
-.container .children {
+main .container .children {
   font-size: 2.5em;
   font-weight: 400;
   display: flex;
@@ -61,7 +47,7 @@ button:hover {
   border: 3px solid #fa5537;
   cursor: pointer;
 }
-.container .children .circle {
+main .container .children .circle {
   width: 90px;
   height: 90px;
   border: 7.5px solid #fa5537;
@@ -69,46 +55,45 @@ button:hover {
   box-sizing: border-box;
 }
 @media screen and (max-width: 1024px) {
-  .container .children .circle {
+  main .container .children .circle {
     width: 50px;
     height: 50px;
   }
 }
-.container .children .cross {
+main .container .children .cross {
   width: 90px;
   height: 90px;
   position: relative;
   transform: rotate(45deg);
 }
 @media screen and (max-width: 1024px) {
-  .container .children .cross {
+  main .container .children .cross {
     width: 50px;
     height: 50px;
   }
 }
-.container .children .cross::before, .container .children .cross::after {
+main .container .children .cross::before, main .container .children .cross::after {
   content: "";
   position: absolute;
   background-color: #fa5537;
 }
-.container .children .cross::before {
+main .container .children .cross::before {
   left: 50%;
   width: 15%;
   height: 100%;
   margin-left: -5%;
 }
-.container .children .cross::after {
+main .container .children .cross::after {
   top: 50%;
   width: 100%;
   height: 15%;
   margin-top: -5%;
 }
-
-.info {
+main .info {
   font-size: 22px;
 }
 @media screen and (max-width: 1024px) {
-  .info {
+  main .info {
     font-size: 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=tic.css.map */
