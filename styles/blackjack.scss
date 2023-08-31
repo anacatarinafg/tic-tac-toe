@@ -24,26 +24,37 @@ main {
     gap: 2.5em;
     .blackjack__cards {
       width: 100%;
-      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: 10px;
-      .blackjack__you, .blackjack__dealer {
+      .blackjack__you,
+      .blackjack__dealer {
         width: 100%;
+        height: 200px;
         border-bottom: 3px solid $text-color;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        h2 {
-          width: 100px;
-          text-align: center;
+        flex-direction: row;
+        box-sizing: border-box;
+        .blackjack__info {
+          display: flex;
+          align-items: center;
+          h2 {
+            width: 200px;
+            text-align: center;
+            font-weight: 500;
+          }
+          h2 span {
+            font-weight: 700;
+          }
         }
         img {
-          width: 250px;
-          height: 250px;
+          min-width: 150px;
+          height: 150px;
           object-fit: contain;
           padding: 1em;
         }
@@ -72,7 +83,6 @@ main {
     td {
       padding: 5px;
       border: 1px solid $text-color;
-
     }
   }
 }

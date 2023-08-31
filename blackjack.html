@@ -31,18 +31,26 @@
       <div class="blackjack">
         <div class="blackjack__cards">
           <div class="blackjack__you">
-            <h2>You</h2>
-            <img src="./assets/Images/2.png" />
+            <div class="blackjack__info" id="infoYou">
+              <h2>Your score:<span id="scoreYou"></span></h2>
+            </div>
+            <!-- <img src="./assets/Images/2.png" /> -->
           </div>
           <div class="blackjack__dealer">
-            <h2>Dealer</h2>
-            <img src="./assets/Images/2.png" />
+            <div class="blackjack__info" id="infoDealer">
+              <h2>Dealer's score: <span id="scoreDealer"></span></h2>
+            </div>
+
+            <!-- <img src="./assets/Images/9.png" /> -->
           </div>
         </div>
         <div class="blackjack__play">
-          <button>Hit</button>
-          <button>Stand</button>
-          <button>Deal</button>
+          <button id="hit">Hit</button>
+          <button id="stand">Stand</button>
+          <button id="deal">Deal</button>
+        </div>
+        <div class="blackjack__results">
+          <span id="blackjack__result">Press 'hit' to start</span>
         </div>
         <div class="blackjack__score">
           <table>
@@ -61,6 +69,6 @@
       </div>
     </main>
 
-    <script src="./blackjack.html"></script>
+    <script src="./javascript/blackjack.js"></script>
   </body>
 </html>

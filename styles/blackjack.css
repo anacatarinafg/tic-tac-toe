@@ -26,28 +26,43 @@ main .blackjack {
 }
 main .blackjack .blackjack__cards {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
 }
-main .blackjack .blackjack__cards .blackjack__you, main .blackjack .blackjack__cards .blackjack__dealer {
+main .blackjack .blackjack__cards .blackjack__you,
+main .blackjack .blackjack__cards .blackjack__dealer {
   width: 100%;
+  height: 200px;
   border-bottom: 3px solid #fa5537;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
 }
-main .blackjack .blackjack__cards .blackjack__you h2, main .blackjack .blackjack__cards .blackjack__dealer h2 {
-  width: 100px;
+main .blackjack .blackjack__cards .blackjack__you .blackjack__info,
+main .blackjack .blackjack__cards .blackjack__dealer .blackjack__info {
+  display: flex;
+  align-items: center;
+}
+main .blackjack .blackjack__cards .blackjack__you .blackjack__info h2,
+main .blackjack .blackjack__cards .blackjack__dealer .blackjack__info h2 {
+  width: 200px;
   text-align: center;
+  font-weight: 500;
 }
-main .blackjack .blackjack__cards .blackjack__you img, main .blackjack .blackjack__cards .blackjack__dealer img {
-  width: 250px;
-  height: 250px;
+main .blackjack .blackjack__cards .blackjack__you .blackjack__info h2 span,
+main .blackjack .blackjack__cards .blackjack__dealer .blackjack__info h2 span {
+  font-weight: 700;
+}
+main .blackjack .blackjack__cards .blackjack__you img,
+main .blackjack .blackjack__cards .blackjack__dealer img {
+  min-width: 150px;
+  height: 150px;
   -o-object-fit: contain;
      object-fit: contain;
   padding: 1em;
