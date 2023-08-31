@@ -15,7 +15,7 @@ main {
   }
   .blackjack {
     width: 95%;
-    height: 700px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,16 +28,25 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       gap: 10px;
-      .blackjack__you {
+      .blackjack__you, .blackjack__dealer {
         width: 100%;
-        height: 100%;
-        border: 3px solid $text-color;
-      }
-      .blackjack__dealer {
-        width: 100%;
-        height: 100%;
-        border: 3px solid $text-color;
+        border-bottom: 3px solid $text-color;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          width: 100px;
+          text-align: center;
+        }
+        img {
+          width: 250px;
+          height: 250px;
+          object-fit: contain;
+          padding: 1em;
+        }
       }
     }
   }
@@ -57,7 +66,13 @@ main {
     }
   }
   .blackjack__score {
-    table {
+    padding: 1em;
+    table,
+    th,
+    td {
+      padding: 5px;
+      border: 1px solid $text-color;
+
     }
   }
 }

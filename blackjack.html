@@ -30,8 +30,14 @@
       <h2 class="headline">Blackjack</h2>
       <div class="blackjack">
         <div class="blackjack__cards">
-          <div class="blackjack__you"></div>
-          <div class="blackjack__dealer"></div>
+          <div class="blackjack__you">
+            <h2>You</h2>
+            <img src="./assets/Images/2.png" />
+          </div>
+          <div class="blackjack__dealer">
+            <h2>Dealer</h2>
+            <img src="./assets/Images/2.png" />
+          </div>
         </div>
         <div class="blackjack__play">
           <button>Hit</button>
@@ -40,18 +46,16 @@
         </div>
         <div class="blackjack__score">
           <table>
-            <tbody>
-              <tr>
-                <td>wins&nbsp;</td>
-                <td>losses&nbsp;</td>
-                <td>draws&nbsp;</td>
-              </tr>
-              <tr>
-                <td>&nbsp;0</td>
-                <td>&nbsp;0</td>
-                <td>&nbsp;0</td>
-              </tr>
-            </tbody>
+            <tr>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Draws</th>
+            </tr>
+            <tr>
+              <td><span id="wins">0</span></td>
+              <td><span id="losses">0</span></td>
+              <td><span id="draws">0</span></td>
+            </tr>
           </table>
         </div>
       </div>
