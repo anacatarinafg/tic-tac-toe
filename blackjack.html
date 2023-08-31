@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/blackjack.css" />
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img
+          src="./assets/ana-goncalves.png"
+          alt="logotype"
+          class="navbar__logotype"
+        />
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="./index.html" class="navbar__link">Tic-tac-toe</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./blackjack.html" class="navbar__link">Blackjack</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="headline">Blackjack</h2>
+      <div class="blackjack">
+        <div class="blackjack__cards">
+          <div class="blackjack__you"></div>
+          <div class="blackjack__dealer"></div>
+        </div>
+        <div class="blackjack__play">
+          <button>Hit</button>
+          <button>Stand</button>
+          <button>Deal</button>
+        </div>
+        <div class="blackjack__score">
+          <table>
+            <tbody>
+              <tr>
+                <td>wins&nbsp;</td>
+                <td>losses&nbsp;</td>
+                <td>draws&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;0</td>
+                <td>&nbsp;0</td>
+                <td>&nbsp;0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="./blackjack.html"></script>
+  </body>
+</html>

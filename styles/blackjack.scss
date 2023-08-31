@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  .headline {
+    text-transform: uppercase;
+    font-size: 4.5em;
+    @include lg {
+      font-size: 2.5em;
+    }
+  }
+  .blackjack {
+    width: 95%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid $text-color;
+    gap: 2.5em;
+    .blackjack__cards {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .blackjack__you {
+        width: 100%;
+        height: 100%;
+        border: 3px solid $text-color;
+      }
+      .blackjack__dealer {
+        width: 100%;
+        height: 100%;
+        border: 3px solid $text-color;
+      }
+    }
+  }
+  .blackjack__play {
+    display: flex;
+    gap: 2em;
+    button {
+      all: unset;
+      border: 1px solid $text-color;
+      border-radius: 25px;
+      padding: 0.25em 1em;
+      transition: 250ms;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .blackjack__score {
+    table {
+    }
+  }
+}

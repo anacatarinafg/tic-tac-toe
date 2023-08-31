@@ -1,0 +1,59 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+main .headline {
+  text-transform: uppercase;
+  font-size: 4.5em;
+}
+@media screen and (max-width: 1024px) {
+  main .headline {
+    font-size: 2.5em;
+  }
+}
+main .blackjack {
+  width: 95%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid #fa5537;
+  gap: 2.5em;
+}
+main .blackjack .blackjack__cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .blackjack .blackjack__cards .blackjack__you {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fa5537;
+}
+main .blackjack .blackjack__cards .blackjack__dealer {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fa5537;
+}
+main .blackjack__play {
+  display: flex;
+  gap: 2em;
+}
+main .blackjack__play button {
+  all: unset;
+  border: 1px solid #fa5537;
+  border-radius: 25px;
+  padding: 0.25em 1em;
+  transition: 250ms;
+  cursor: pointer;
+}
+main .blackjack__play button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=blackjack.css.map */
