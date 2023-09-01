@@ -66,7 +66,7 @@ function showCard(card, player) {
   // Check if the player's score allows displaying the card
   if (player["score"] <= 30) {
     let imageCard = document.createElement("img");
-    imageCard.src = `assets/Images/${card}.png`;
+    imageCard.src = `assets/${card}.png`;
     document.querySelector(player["div"]).appendChild(imageCard);
   }
 }
