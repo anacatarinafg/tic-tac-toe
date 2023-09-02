@@ -1,2 +1,65 @@
 @import "./variables.scss";
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  h2 {
+    text-transform: uppercase;
+    font-size: 4.5em;
+    @include lg {
+      font-size: 2.5em;
+    }
+  }
+  .memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .memory__boxs {
+      display: flex;
+      .memory__button {
+        width: 140px;
+        height: 140px;
+        border: none;
+        box-shadow: 0.5px 1px 5px #863527;
+        background-color: #863527;
+        margin: 0.5em;
+        transition: 250ms;
+      }
+      .hoverEffect {
+        &:hover {
+          background-color: #fa5537;
+          transition: 250ms;
+          cursor: pointer;
+        }
+      }
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        color: #fee4cb;
+        position: relative;
+        z-index: -1;
+      }
+    }
+  }
+  .memory__reset {
+    all: unset;
+    border: 1px solid $text-color;
+    border-radius: 25px;
+    padding: 0.25em 1em;
+    transition: 250ms;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .memory__score {
+    font-size: 22px;
+    .memory__counter {
+      font-weight: 700;
+    }
+  }
+}
